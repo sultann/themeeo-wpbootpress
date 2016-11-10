@@ -9,8 +9,6 @@
  $the_theme = wp_get_theme();
 ?>
 
-<?php get_sidebar('footerfull'); ?>
-
 <div class="wrapper" id="wrapper-footer">
 
     <div class="container">
