@@ -11,7 +11,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "http://themeeo-boiler.dev/",
+    proxy: "http://wpfisher.dev/",
     notify: true
 };
 

@@ -118,27 +118,27 @@ if(!function_exists('themeeo_widget_init')):
         register_sidebar(array(
             'name' => __('Page Sidebar','published'),
             'id' => 'page_sidebar',
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div></div>',
+            'before_widget' => '<aside id="%1$s" class="widget side %2$s">',
+            'after_widget' => '</aside>',
             'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3><div class="widget-body">',
+            'after_title' => '</h3>',
         ));
         register_sidebar(array(
             'name' => __('Blog Sidebar','published'),
             'id' => 'blog_sidebar',
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div></div>',
+            'before_widget' => '<aside id="%1$s" class="widget side %2$s">',
+            'after_widget' => '</aside>',
             'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3><div class="widget-body">',
+            'after_title' => '</h3>',
         ));
         register_sidebar( array(
             'name'          => __( 'Footer Area 1', 'published' ),
             'id'            => 'footer-1',
             'description'   => 'Footer 1 Widget Area',
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div></div>',
+            'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3><div class="widget-body">',
+            'after_title' => '</h3>',
         ) );
 
         register_sidebar( array(
@@ -146,9 +146,9 @@ if(!function_exists('themeeo_widget_init')):
             'id'            => 'footer-2',
             'description'   => 'Footer 2 Widget Area',
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div></div>',
+            'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3><div class="widget-body">',
+            'after_title' => '</h3>',
         ) );
 
         register_sidebar( array(
@@ -156,9 +156,9 @@ if(!function_exists('themeeo_widget_init')):
             'id'            => 'footer-3',
             'description'   => 'Footer 3 Widget Area',
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div></div>',
+            'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3><div class="widget-body">',
+            'after_title' => '</h3>',
         ) );
 
 
@@ -167,9 +167,9 @@ if(!function_exists('themeeo_widget_init')):
             'id'            => 'footer-4',
             'description'   => 'Footer 4 Widget Area',
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div></div>',
+            'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3><div class="widget-body">',
+            'after_title' => '</h3>',
         ) );
 
 
@@ -180,3 +180,9 @@ add_action( 'widgets_init', 'themeeo_widget_init' );
 # Shortcode support for widgets
 #-----------------------------------------------------------------#
 add_filter('widget_text', 'do_shortcode');
+
+#-----------------------------------------------------------------#
+# Required files
+#-----------------------------------------------------------------#
+require THM_THEME_INC_DIR.'/extra-functions.php';
+

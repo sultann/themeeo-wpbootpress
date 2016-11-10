@@ -7,7 +7,7 @@
 get_header(); ?>
 <div class="wrapper" id="404-wrapper">
     
-    <div  id="content" class="container">
+    <div  id="content" class="container mt100">
 
         <div class="row">
         

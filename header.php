@@ -29,7 +29,7 @@
 	
         <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'themeeo' ); ?></a>
 
-        <nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+        <nav class="navbar navbar-fixed-top navbar-light bg-faded site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                             
 
                 <div class="container">
@@ -57,7 +57,7 @@
                                     array(
                                         'theme_location' => 'primary',
                                         'container_class' => 'collapse navbar-toggleable-xs exCollapsingNavbar',
-                                        'menu_class' => 'nav navbar-nav',
+                                        'menu_class' => 'nav navbar-nav float-xs-right',
                                         'fallback_cb' => '',
                                         'menu_id' => 'main-menu',
                                         'walker' => new wp_bootstrap_navwalker()

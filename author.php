@@ -10,11 +10,11 @@ get_header(); ?>
 
 <div class="wrapper" id="author-wrapper">
     
-    <div  id="content" class="container">
+    <div  id="content" class="container mt100">
 
         <div class="row">
-        
-            <div id="primary" class="<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
+
+            <div id="primary" class="<?php if ( is_active_sidebar( 'blog_sidebar' ) ) : ?>col-sm-12 col-md-8 col-lg-9<?php else : ?>col-md-12<?php endif; ?> content-area">
                
                 <main id="main" class="site-main" role="main">
                         
