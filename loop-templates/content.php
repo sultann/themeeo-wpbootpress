@@ -5,42 +5,38 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    
-	<header class="entry-header">
-        
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<div class="post-item">
+		<?php echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' ); ?>
+		<div class="post-item-inner">
+			<header class="entry-header">
 
-		<?php if ( 'post' == get_post_type() ) : ?>
+				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-			<div class="entry-meta">
-				<?php themeeo_posted_on(); ?>
-			</div><!-- .entry-meta -->
+				<?php if ( 'post' == get_post_type() ) : ?>
 
-		<?php endif; ?>
-        
-	</header><!-- .entry-header -->
+					<div class="entry-meta">
+						<?php themeeo_posted_on(); ?>
+					</div><!-- .entry-meta -->
 
-       <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?> 
-    
-		<div class="entry-content">
+				<?php endif; ?>
 
-	            <?php
-	                the_excerpt();
-	            ?>
+			</header><!-- .entry-header -->
 
-			<?php
+			<div class="entry-content">
+
+				<?php
+				the_excerpt();
+				?>
+
+				<?php
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . __( 'Pages:', 'themeeo' ),
 					'after'  => '</div>',
 				) );
-			?>
-	        
-		</div><!-- .entry-content -->
+				?>
 
-	<footer class="entry-footer">
-
-		<?php themeeo_entry_footer(); ?>
-		
-	</footer><!-- .entry-footer -->
+			</div><!-- .entry-content -->
+		</div>
+	</div>
     
 </article><!-- #post-## -->

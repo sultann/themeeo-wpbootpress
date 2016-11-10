@@ -41,6 +41,7 @@ if ( ! function_exists( 'themeeo_after_setup' ) ):
 
         //register custom image sizes
         //add_image_size( 'thumbnail', 150, 125, true );
+        add_image_size( 'post-thumbnail', 850, 230, true );
 
         add_theme_support( 'post-formats', array(
         'aside', 'image', 'video', 'quote', 'link',

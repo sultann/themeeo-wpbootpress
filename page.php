@@ -11,19 +11,20 @@
  */
 
 get_header(); ?>
-    <div class="wrapper" id="full-width-page-wrapper">
+    <div class="wrapper site-content" id="full-width-page-wrapper">
 
-        <div  id="content" class="container mt100">
+        <div  id="content" class="container main-content-area">
 
             <div id="primary" class="col-md-12 content-area">
 
                 <main id="main" class="site-main" role="main">
+                    <div class="inner-page-area">
+                        <?php while ( have_posts() ) : the_post(); ?>
 
-                    <?php while ( have_posts() ) : the_post(); ?>
+                            <?php get_template_part( 'loop-templates/content', 'page' ); ?>
 
-                        <?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-                    <?php endwhile; // end of the loop. ?>
+                        <?php endwhile; // end of the loop. ?>
+                    </div>
 
                 </main><!-- #main -->
 

@@ -29,7 +29,7 @@
 	
         <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'themeeo' ); ?></a>
 
-        <nav class="navbar navbar-fixed-top navbar-light bg-faded site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+        <nav class="navbar navbar-fixed-top site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                             
 
                 <div class="container">

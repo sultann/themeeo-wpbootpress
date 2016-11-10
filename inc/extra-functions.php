@@ -4,7 +4,7 @@ if ( ! function_exists( 'themeeo_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
 	function themeeo_posted_on() {
-		$time_string = '<time class="entry-date themeeo updated" datetime="%1$s">%2$s</time>';
+		$time_string = '<time class="entry-date themeeo" datetime="%1$s">%2$s</time>';
 
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( 'c' ) ),
@@ -98,7 +98,7 @@ function themeeo_categorized_blog() {
 
 function all_excerpts_get_more_link( $post_excerpt ) {
 
-	return $post_excerpt . '<p><a class="btn btn-secondary read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...', 'themeeo' ) . '</a></p>';
+	return $post_excerpt . '<p class="read-more-p"><a class="btn btn-secondary read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...', 'themeeo' ) . '</a></p>';
 }
 
 add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
