@@ -28,11 +28,24 @@ get_header(); ?>
                 
             </div><!-- #primary -->
         
-        <div class="product-widget-area col-md-3 col-md-offset-1">
-            <?php
-            global $post;
-            echo edd_get_purchase_link( array( 'download_id' => $post->ID ));
-            ?>
+        <div class="product-widget-area col-md-3 offset-md-1">
+            <aside class="product-pricing">
+                <div class="pricing-header">
+                    <h3 class="widget-title">Pricing</h3>
+                </div>
+                <div class="pricing-info">
+                    <?php
+                    global $post;
+                    echo edd_get_purchase_link( array( 'download_id' => $post->ID ));
+                    ?>
+
+                    <div class="terms clearfix">
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            All price options are billed yearly. You may cancel your subscription at any time. Extensions subject to yearly license for support and updates. <a href="http://docs.easydigitaldownloads.com/article/942-terms-and-conditions" target="_blank">View terms</a>.				</p>
+                    </div>
+                </div>
+            </aside>
         </div>
 
         </div><!-- .row -->

@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="wrapper" id="archive-wrapper">
     
-    <div  id="content" class="container mt100">
+    <div  id="content" class="container mt100 main-content-area">
 
         <div class="row">
 

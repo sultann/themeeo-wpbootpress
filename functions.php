@@ -42,6 +42,8 @@ if ( ! function_exists( 'themeeo_after_setup' ) ):
         //register custom image sizes
         //add_image_size( 'thumbnail', 150, 125, true );
         add_image_size( 'post-thumbnail', 850, 230, true );
+        add_image_size( 'product-thumbnail', 540, 270, true );
+        add_image_size( 'product-medium', 850, 350, true );
 
         add_theme_support( 'post-formats', array(
         'aside', 'image', 'video', 'quote', 'link',
@@ -75,11 +77,13 @@ function themeeo_scripts() {
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_register_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css');
     wp_register_style('tether', get_template_directory_uri() . '/css/tether.min.css');
+    wp_register_style('icheck', get_template_directory_uri() . '/css/icheck-red.css');
     wp_register_style('responsive-styles', get_template_directory_uri() . '/css/responsive.css',array('bootstrap'));
 
     wp_enqueue_style('tether');
     wp_enqueue_style('bootstrap');
     wp_enqueue_style('font-awesome');
+    wp_enqueue_style('icheck');
     wp_enqueue_style('style-dynamic');
     wp_enqueue_style('responsive-styles');
     wp_enqueue_style('theme-style');
@@ -94,6 +98,7 @@ function themeeo_scripts() {
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'));
     wp_register_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'));
     wp_register_script('tether', get_template_directory_uri() . '/js/tether.min.js', array('jquery'));
+    wp_register_script('icheck', get_template_directory_uri() . '/js/icheck.min.js', array('jquery'));
 //    wp_register_script('wow-js', get_template_directory_uri() . '/js/wow.min.js', array('jquery'));
 //    wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery') );
 
@@ -103,6 +108,7 @@ function themeeo_scripts() {
     wp_enqueue_script('bootstrap', '', '', '', true);
     wp_enqueue_script('owl-carousel', '', '', '', true);
     wp_enqueue_script('tether', '', '', '', true);
+    wp_enqueue_script('icheck', '', '', '', true);
     wp_enqueue_script('custom', '', '', '', true);
 
 }
@@ -186,4 +192,5 @@ add_filter('widget_text', 'do_shortcode');
 # Required files
 #-----------------------------------------------------------------#
 require THM_THEME_INC_DIR.'/extra-functions.php';
+require THM_THEME_INC_DIR.'/edd-functions.php';
 

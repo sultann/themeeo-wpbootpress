@@ -7,14 +7,14 @@
 get_header(); ?>
 <div class="wrapper" id="404-wrapper">
     
-    <div  id="content" class="container mt100">
+    <div  id="content" class="container mt100 main-content-area">
 
         <div class="row">
         
             <div id="primary" class="content-area">
 
                 <main id="main" class="site-main" role="main">
-
+                    <div class="inner-page-area">
                     <section class="error-404 not-found">
                         
                         <header class="page-header">
@@ -27,14 +27,21 @@ get_header(); ?>
                             <p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'themeeo' ); ?></p>
 
                             <?php get_search_form(); ?>
-
-                            <?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+                            <?php
+                            $default_args = array(
+                                'before_widget' => '<div class="widget %s">',
+                                'after_widget'  => "</div>",
+                                'before_title'  => '<h3 class="widgettitle">',
+                                'after_title'   => '</h3>',
+                            );
+                            ?>
+                            <?php the_widget( 'WP_Widget_Recent_Posts', '',  $default_args); ?>
 
                             <?php if ( themeeo_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 
                                 <div class="widget widget_categories">
 
-                                    <h2 class="widget-title"><?php _e( 'Most Used Categories', 'themeeo' ); ?></h2>
+                                    <h3 class="widget-title"><?php _e( 'Most Used Categories', 'themeeo' ); ?></h3>
 
                                     <ul>
                                     <?php
@@ -52,18 +59,12 @@ get_header(); ?>
                             
                             <?php endif; ?>
 
-                            <?php
-                                /* translators: %1$s: smiley */
-                                $archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'themeeo' ), convert_smilies( ':)' ) ) . '</p>';
-                                the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-                            ?>
 
-                            <?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 
                         </div><!-- .page-content -->
                         
                     </section><!-- .error-404 -->
-
+                        </div>
                 </main><!-- #main -->
                 
             </div><!-- #primary -->

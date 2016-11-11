@@ -207,3 +207,88 @@
   url('http://fonts.gstatic.com/s/poppins/v1/zO07Oxe3SOlw0l2YX2sdIS3USBnSvpkopQaUR-2r7iU.ttf') format('truetype'),
   url('http://fonts.gstatic.com/l/font?kit=zO07Oxe3SOlw0l2YX2sdIaWUboTb-jS2tyCOQMtm97g&skey=ce7ef9d62ca89319&v=v1#Poppins') format('svg');
 }
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/roboto/v15/5YB-ifwqHP20Yn46l_BDhA.eot');
+  src: url('http://fonts.gstatic.com/s/roboto/v15/5YB-ifwqHP20Yn46l_BDhA.eot?#iefix') format('embedded-opentype'),
+  local('Roboto'),
+  local('Roboto-regular'),
+  url('http://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/roboto/v15/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=_YZOZaQ9UBZzaxiLBLcgZg&skey=a0a0114a1dcab3ac&v=v15#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOPY6323mHUZFJMgTvxaG2iE.eot');
+  src: url('http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOPY6323mHUZFJMgTvxaG2iE.eot?#iefix') format('embedded-opentype'),
+  local('Roboto Bold'),
+  local('Roboto-700'),
+  url('http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=d-6IYplOFocCacKzxwXSOJbd9NUM7myrQQz30yPaGQ4&skey=c06e7213f788649e&v=v15#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: italic;
+  src: url('http://fonts.gstatic.com/s/roboto/v15/OiNnAEwKzzJkQCr4qZmeq_esZW2xOQ-xsNqO47m55DA.eot');
+  src: url('http://fonts.gstatic.com/s/roboto/v15/OiNnAEwKzzJkQCr4qZmeq_esZW2xOQ-xsNqO47m55DA.eot?#iefix') format('embedded-opentype'),
+  local('Roboto Italic'),
+  local('Roboto-italic'),
+  url('http://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByXYhjbSpvc47ee6xR_80Hnw.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/roboto/v15/1pO9eUAp8pSF8VnRTP3xnnYhjbSpvc47ee6xR_80Hnw.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=d6hCKsxkfwUDuz8291ns3vesZW2xOQ-xsNqO47m55DA&skey=c608c610063635f9&v=v15#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUffY6323mHUZFJMgTvxaG2iE.eot');
+  src: url('http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUffY6323mHUZFJMgTvxaG2iE.eot?#iefix') format('embedded-opentype'),
+  local('Roboto Light'),
+  local('Roboto-300'),
+  url('http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=Hgo13k-tfSpn0qi1SFdUfZbd9NUM7myrQQz30yPaGQ4&skey=11ce8ad5f54705ca&v=v15#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: italic;
+  src: url('http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at2fQcKutQXcIrRfyR5jdjY8.eot');
+  src: url('http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at2fQcKutQXcIrRfyR5jdjY8.eot?#iefix') format('embedded-opentype'),
+  local('Roboto Light Italic'),
+  local('Roboto-300italic'),
+  url('http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at4gp9Q8gbYrhqGlRav_IXfk.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at7rIa-7acMAeDBVuclsi6Gc.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at50EAVxt0G0biEntp43Qt6E.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=7m8l7TlFO-S3VkhHuR0at3NsigHlcrQGNV8nkUSFQfc&skey=8f644060176e1f7e&v=v15#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUfY6323mHUZFJMgTvxaG2iE.eot');
+  src: url('http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUfY6323mHUZFJMgTvxaG2iE.eot?#iefix') format('embedded-opentype'),
+  local('Roboto Medium'),
+  local('Roboto-500'),
+  url('http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2') format('woff2'),
+  url('http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUbO3LdcAZYWl9Si6vvxL-qU.woff') format('woff'),
+  url('http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf') format('truetype'),
+  url('http://fonts.gstatic.com/l/font?kit=RxZJdnzeo3R5zSexge8UUZbd9NUM7myrQQz30yPaGQ4&skey=ee881451c540fdec&v=v15#Roboto') format('svg');
+}

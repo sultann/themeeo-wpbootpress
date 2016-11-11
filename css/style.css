@@ -1043,3 +1043,42 @@ Wigets
   font-weight: 600;
   text-transform: uppercase;
   background-color: #f7f7f9; }
+
+/*-----------------------------------------------------------------
+Product Card
+-----------------------------------------------------------------*/
+.product-card {
+  margin-bottom: 2rem; }
+  .product-card .product-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    font-weight: 600; }
+
+/*-----------------------------------------------------------------
+Single Product
+-----------------------------------------------------------------*/
+.product-pricing {
+  background: #2794da;
+  color: #fff;
+  border-radius: 4px; }
+  .product-pricing .pricing-header {
+    background: rgba(0, 0, 0, 0.1) url(https://easydigitaldownloads.com/wp-content/themes/edd-v2/images/mascot/edd-headshot.png) no-repeat 22px bottom;
+    text-align: right;
+    padding: 18px 30px;
+    border-bottom: 1px solid #215b95; }
+  .product-pricing .widget-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0;
+    border: none;
+    margin: 0; }
+  .product-pricing .pricing-info {
+    padding: 20px;
+    font-size: 1rem; }
+    .product-pricing .pricing-info .edd_price_options span {
+      display: inline;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-left: 4px; }
